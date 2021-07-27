@@ -1,73 +1,225 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@body: #f4f8fa;
+@tag: darkgray;
+@primary: #ff5c4c;
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
-    margin: 0;
-    background: black;
+	background: @body;
 }
-li, a ,button{
-    font-weight: normal;
-    font-size: 13px;
-    color: darkgray;
-    text-decoration: none;
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+.button-group{
+	margin-left: 145px;
+	#btn-like{
+		background: #F5C388;
+	}
 }
-h2{
-    color: black;
-    float: left;
-    margin-right: 250px;
-    font-weight: bolder;
+.btn-add,
+.btn-update,
+.btn-adopt-pet,
+.btn-like-pet{
+	background: @primary;
+	color: #fff;
+	font-size: 14px;
+	&:hover{
+		color: @primary;
+	}
+	i{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
 }
-header{
-    display: flex;
-    margin: 0 auto;
+.btn-like-pet{
+	background: #706c66;
+	color: snow;
+}
+footer{
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Kanit', sans-serif;
+	margin-top: 50px;
+	.v88{
+		color: @primary;
+	}
+}
+h1, p{
+    line-height: 1.2;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-top: 10px;
+}
+h3{
     text-align: center;
     justify-content: center;
+    top: 30vh;
+    position: relative;
     align-items: center;
-    padding: 10px 10%;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
 }
+img{
+    position: absolute;
+    width: 540px;
+    height: 240px;
+    left: 290px;
+    top: -40px;
+}
+.modal{
+	.modal-dialog{
+		.modal-content{
+				.modal-title {
+					font-weight: bold;
+					font-family: "Kanit", sans-serif;
+				}
+			}
+			.modal-body{
+				.form-group{
+					display: flex;
+					align-items: center;
+					label{
+						font-size: 13px;
+					}
+					.form-control{
+						background: #f2f2f2;
+						color: #333333;
+					}
+					select{
+						background-color: white;
+						border-radius: 4px;
+						display: inline-block;
+						line-height: 1.5em;
+						padding: 5px;
+						color: @tag;
+						font-size: 14px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+	}
 nav{
+	background: snow;
     box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 2.8px 5px rgba(0, 0, 0, 0.034),
+        0 6.7px 6.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 20px rgba(0, 0, 0, 0.06),
+        0 22.3px 27.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 53.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
-    padding: 10px;
-    width: 850px;
-    border-radius: 10px;
+	margin: 20px auto;
+	border-radius: 5px;
+	width: 51vw;
+	font-family: 'Kanit', sans-serif;
+	.container{
+		height: 69px;
+		display: flex;
+		width: 1000px;
+		justify-content: space-between;
+		align-items: center;
+		.navbar-brand{
+			font-size: 24px;
+			color: #141414;
+			font-family: "Do Hyeon", sans-serif;
+			margin-right: 14em;
+		}
+		.nav-links{
+			a{
+				font-family: "Kanit", sans-serif;
+				font-size: 14px;
+				color: @tag;
+				margin: 23px 48px 24px 0px;
+				&.active {
+					color: @primary;
+				}
+			}
+		}
+		.btn-add-pet-to-shelter{
+			background: @primary;
+			color: #fff;
+			padding: 5px 9px 5px 2px;
+			font-size: 14px;
+			margin-right: 16px;
+			&:hover{
+				color: #fff;
+			}
+			i{
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+	}
 }
-.navlinks{
-    margin: 10px -75px 0 0;
-    text-align: center;
-    justify-content: center;
-        list-style: none;
-        li{
-        display: inline-block;
-        padding: 0px 20px;
-        font-family: 'Kanit', sans-serif;
-        a{
-            transition: all 0.3s ease 0s;
-        a:hover{
-                color: orange;
-            }
-        }
-    }
+p{
+	font-family: 'Kanit', sans-serif !important;
+	font-size: 15px;
+	color: @tag;
+	line-height: 1.5;
 }
-li a.active{
-    color: orange;
-}
-button{
-    padding: 7px;
-    background-color: #FF5C4C;
-    border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: white;
-    width: 125px;
-&:hover{
-        background-color: red;
-    }
+.pets-section{
+	margin-top: 35vh;
+	h2{
+		text-align: center;
+		font-family: "Kanit", sans-serif;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.all_pets{
+		background: snow;
+		width: 51vw;
+		margin: 0 auto;
+		padding-left: 15px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		align-items: center;
+		height: 69px;
+		font-family: "Kanit", sans-serif;
+		margin-bottom: 5px;
+		box-shadow: 0px 8px 40px 0px rgba(34, 69, 82, 0.05);
+		label {
+			color: @tag;
+		}
+		.action{
+			margin-right: 24px;
+			width: 12vw;
+			a {
+				color: @tag;
+				font-size: 18px;
+				.fas,
+				.fa {
+					margin-right: 14px;
+					margin-left: 34px;
+					.fa-pen-square {
+						border-radius: 50px;
+					}
+				}
+			}
+		}
+	}
+	.detailsPet{
+		.pet-type{
+			margin-top: 10px !important;
+			margin-right: 23px;
+		}
+		.modal-footer{
+			background: #f2f2f2;
+			display: flex;
+			flex-direction: row;
+			p {
+				margin-top: 0px !important;
+				margin-left: 0px !important;
+				font-family: "Kanit", sans-serif;
+				font-size: 18px;
+				width: 100px !important;
+				height: 22px;
+				text-align: right;
+				margin-right: 23px;
+				color: @tag;
+			}
+		}
+	}
 }
 .shop{
     display: block;
@@ -77,44 +229,13 @@ button{
     align-self: inherit;
     text-align: left;
     align-items: flex-start;
-    left: 600px;
+    top: 150px;
+    left: 520px;
     font-size: 20px;
-}
-.adopt{
-    color: #FF5C4C;
-}
-.shop_span{
-    color: darkgray;
-}
-p{
-    font-size: 14px;
-    color: darkgray;
-    line-height: 1.4 !important;
-    margin-top: -1vh;
-}
-h1, p{
-    line-height: 1;
-}
-img{
-    position: absolute;
-    width: 595.32px;
-    height: 240px;
-    left: 270px;
-}
-h3{
-    text-align: center;
-    justify-content: center;
-    top: 30vh;
-    position: relative;
-    align-items: center;
-    font-size: 30px;
-}
-.table-responsive{  
-    width: 1200px;  
-    padding: 20px;  
-    background-color:#fff;  
-    border-radius: 5px;
-    margin-top: 300px;
-    text-align: center;
-    justify-content: center;
-}
+    .adopt{
+        color: #FF5C4C;
+    }
+    .shop_span{
+        color: darkgray;
+    }
+}   
