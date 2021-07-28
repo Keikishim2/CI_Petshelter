@@ -51,44 +51,44 @@ body {
   color: snow;
 }
 footer {
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
   font-family: 'Kanit', sans-serif;
-  margin-top: 50px;
+  justify-content: center;
+  margin-top: 5vh;
+  color: darkgray !important;
+  text-align: center;
 }
 footer .v88 {
   color: #ff5c4c;
 }
 h1,
 p {
-  line-height: 1.2;
   font-family: 'Do Hyeon', sans-serif;
+  line-height: 1.2;
   margin-top: 10px;
 }
 h3 {
-  text-align: center;
-  justify-content: center;
-  top: 30vh;
-  position: relative;
   align-items: center;
-  font-size: 30px;
   font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  top: 30vh;
 }
 img {
-  position: absolute;
-  width: 540px;
   height: 240px;
   left: 290px;
+  position: absolute;
   top: -40px;
+  width: 540px;
 }
 .modal .modal-dialog .modal-content .modal-title {
-  font-weight: bold;
   font-family: "Kanit", sans-serif;
+  font-weight: bold;
 }
 .modal .modal-dialog .modal-body .form-group {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .modal .modal-dialog .modal-body .form-group label {
   font-size: 13px;
@@ -100,85 +100,88 @@ img {
 .modal .modal-dialog .modal-body .form-group select {
   background-color: white;
   border-radius: 4px;
+  box-sizing: border-box;
+  color: darkgray;
   display: inline-block;
+  font-size: 14px;
   line-height: 1.5em;
   padding: 5px;
-  color: darkgray;
-  font-size: 14px;
-  box-sizing: border-box;
 }
-nav {
+header nav {
   background: snow;
   box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.034), 0 6.7px 6.3px rgba(0, 0, 0, 0.048), 0 12.5px 20px rgba(0, 0, 0, 0.06), 0 22.3px 27.9px rgba(0, 0, 0, 0.072), 0 41.8px 53.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-  margin: 20px auto;
   border-radius: 5px;
-  width: 51vw;
   font-family: 'Kanit', sans-serif;
+  margin: 20px auto;
+  width: 51vw;
 }
-nav .container {
-  height: 69px;
-  display: flex;
-  width: 1000px;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .container .navbar-brand {
-  font-size: 24px;
+header nav .navbar-brand {
   color: #141414;
   font-family: "Do Hyeon", sans-serif;
+  font-size: 24px;
   margin-right: 14em;
+  margin-top: 8px;
 }
-nav .container .nav-links a {
+header nav .nav-links {
+  height: 7vh;
+  padding: 15px;
+}
+header nav .nav-links a {
+  color: darkgray;
   font-family: "Kanit", sans-serif;
   font-size: 14px;
-  color: darkgray;
   margin: 23px 48px 24px 0px;
 }
-nav .container .nav-links a.active {
+header nav .nav-links a.active {
   color: #ff5c4c;
 }
-nav .container .btn-add-pet-to-shelter {
+header nav .btn-add-pet-to-shelter {
   background: #ff5c4c;
   color: #fff;
-  padding: 5px 9px 5px 2px;
   font-size: 14px;
   margin-right: 16px;
+  padding: 5px 9px 5px 2px;
 }
-nav .container .btn-add-pet-to-shelter:hover {
+header nav .btn-add-pet-to-shelter:hover {
   color: #fff;
 }
-nav .container .btn-add-pet-to-shelter i {
-  margin-right: 10px;
+header nav .btn-add-pet-to-shelter i {
   margin-left: 10px;
+  margin-right: 10px;
 }
 p {
+  color: darkgray;
   font-family: 'Kanit', sans-serif !important;
   font-size: 15px;
-  color: darkgray;
   line-height: 1.5;
 }
 .pets-section {
   margin-top: 35vh;
 }
 .pets-section h2 {
-  text-align: center;
   font-family: "Kanit", sans-serif;
   font-size: 24px;
   margin-bottom: 30px;
+  text-align: center;
+}
+.pets-section #type {
+  position: absolute;
+  text-align: center;
+  margin-left: 400px;
 }
 .pets-section .all_pets {
+  align-items: center;
   background: snow;
-  width: 51vw;
+  box-shadow: 0px 8px 40px 0px rgba(34, 69, 82, 0.05);
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  height: 69px;
+  justify-content: space-between;
+  margin-bottom: 5px;
   margin: 0 auto;
   padding-left: 15px;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
-  align-items: center;
-  height: 69px;
-  font-family: "Kanit", sans-serif;
-  margin-bottom: 5px;
-  box-shadow: 0px 8px 40px 0px rgba(34, 69, 82, 0.05);
+  width: 51vw;
 }
 .pets-section .all_pets label {
   color: darkgray;
@@ -193,44 +196,35 @@ p {
 }
 .pets-section .all_pets .action a .fas,
 .pets-section .all_pets .action a .fa {
-  margin-right: 14px;
   margin-left: 34px;
+  margin-right: 14px;
 }
 .pets-section .all_pets .action a .fas .fa-pen-square,
 .pets-section .all_pets .action a .fa .fa-pen-square {
   border-radius: 50px;
 }
 .pets-section .detailsPet .pet-type {
-  margin-top: 10px !important;
   margin-right: 23px;
+  margin-top: 10px !important;
 }
 .pets-section .detailsPet .modal-footer {
   background: #f2f2f2;
   display: flex;
   flex-direction: row;
-}
-.pets-section .detailsPet .modal-footer p {
-  margin-top: 0px !important;
-  margin-left: 0px !important;
-  font-family: "Kanit", sans-serif;
-  font-size: 18px;
-  width: 100px !important;
-  height: 22px;
-  text-align: right;
-  margin-right: 23px;
-  color: darkgray;
+  font-family: 'Kanit', sans-serif;
 }
 .shop {
-  display: block;
-  position: absolute;
-  margin: 0 auto;
-  justify-content: left;
-  align-self: inherit;
-  text-align: left;
   align-items: flex-start;
-  top: 150px;
-  left: 520px;
+  align-self: inherit;
+  display: block;
   font-size: 20px;
+  justify-content: left;
+  left: 520px;
+  margin: 0 auto;
+  position: absolute;
+  font-family: 'Kanit', sans-serif;
+  text-align: left;
+  top: 150px;
 }
 .shop .adopt {
   color: #FF5C4C;
